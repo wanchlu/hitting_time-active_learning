@@ -1,0 +1,10 @@
+0 x02_put x01_sting x0_into x11_cut 
+0 x02_price x01_entitynam x0_by x11_group 
+0 x02_invest x01_monei x0_in x11_stock 
+0 x02_had x01_damag x0_at x11_headquart 
+1 x02_is x01_result x0_of x11_activ 
+1 x02_name x01_offic x0_of x11_manufactur 
+1 x02_provid x01_million x0_in x11_financ 
+0 x02_paid x01_million x0_to x11_entitynam 
+0 x02_foil x01_entitynam x0_in x11_entitynam 
+0 x02_post x01_increas x0_becaus x11_growth 
