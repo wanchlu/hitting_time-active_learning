@@ -42,7 +42,7 @@ my @ranked_f = sort (keys %f_lookup);
 my $idx = 0;
 foreach my $f (@ranked_f) {
     $f_index{"$f"} = $idx;
-    print OUT3 $idx."\t".$f."\n";
+    print OUT3 $f."\n";
     $idx ++;
 }
 

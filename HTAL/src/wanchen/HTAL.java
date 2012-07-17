@@ -166,11 +166,13 @@ class FeatureNodeSet {
 			System.exit(1);
         }	
 		try {
+			int id = 0;
 			while (true) {
 				String Line = File.readLine();	// format: fid<tab>fname
 				if (Line == null)
 					break;
-				feature_nodes.add(new FeatureNode(Line));
+				feature_nodes.add(new FeatureNode(id, Line));
+				id ++;
 			}
 			File.close();			
 		} catch (IOException e) {
@@ -183,16 +185,14 @@ class FeatureNodeSet {
 class FeatureNode {
 	private ArrayList<Integer> example_nodes;
 	private Integer id;
-	
 	public FeatureNode (Integer ii) {
 		id = ii;
-		example_nodes = new ArrayList<Integer> ();
+		example_nodes = new ArrayList<Integer> ();		
 	}
-	public FeatureNode (String str) {
-		String[] tokens = str.split("\\s+");
-		id = Integer.parseInt(tokens[0]);
-		example_nodes = new ArrayList<Integer> ();
+	public FeatureNode (Integer ii, String str) {
+		this(ii);
 	}
+
 	public void AddExampleNode (Integer ii) {
 		example_nodes.add(ii);
 	}	
